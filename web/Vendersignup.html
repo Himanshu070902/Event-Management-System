@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>.header {
+        background-color: blue;
+        color: white;
+        padding: 50px;
+        text-align: center;
+      }
+      
+      .form {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 20px;
+      }
+      
+      .inputs, .labels {
+        background-color: lightblue;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 50px;
+      }
+      
+      label, input, select, p {
+        display: block;
+        margin: 10px;
+      }
+      
+      button {
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+      }
+      </style>
+</head>
+<body>
+     <form  action="vendersingupservlet" method="post">
+    <div class="header">
+      
+        <h1>Event Management System</h1>
+      </div>
+      <div class="form">
+        <div class="inputs">
+            
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <label for="category"> Vender Category</label>
+          <select id="category" name="category">
+            <option value="vendor">Lighting</option>
+            <option value="drop-down">Catering</option>
+             <option value="drop-down">Florist</option>
+              <option value="drop-down">Decoration</option>
+          </select>
+       
+      <button>Sign Up</button>
+
+      </form>
+</body>
+</html>
